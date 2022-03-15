@@ -1,3 +1,3 @@
 # vue3-timers
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vue-hrh5rg)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vue3-timers)
