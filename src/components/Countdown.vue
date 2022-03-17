@@ -51,12 +51,12 @@ export default {
   methods: {
     startTimer() {
       this.active = true;
-      this.remainder = performance.now() - (this.startTime - this.counter);
+      this.remainder = moment.now() - (this.startTime - this.counter);
       this.timerLoop();
     },
     timerLoop() {
       this.counter > 0
-        ? (this.counter = this.startTime - (performance.now() - this.remainder))
+        ? (this.counter = this.startTime - (moment.now() - this.remainder))
         : ((this.counter = 0), cancelAnimationFrame(this.animationFrame));
       this.animationFrame = requestAnimationFrame(this.timerLoop);
     },

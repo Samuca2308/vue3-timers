@@ -43,11 +43,11 @@ export default {
   methods: {
     startTimer() {
       this.active = true;
-      this.remainder = Math.floor(performance.now() - this.counter);
+      this.remainder = Math.floor(moment.now() - this.counter);
       this.timerLoop();
     },
     timerLoop() {
-      this.counter = performance.now() - this.remainder;
+      this.counter = moment.now() - this.remainder;
       this.animationFrame = requestAnimationFrame(this.timerLoop);
     },
     stopTimer() {
